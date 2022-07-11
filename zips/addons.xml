@@ -1,0 +1,58 @@
+<addons>		
+<addon id="plugin.video.equilibrium.matrix" name="Equilibrium" version="5.0.0.alpha4" provider-name="Team Magusplay">
+	<requires>
+		<import addon="script.module.six" />
+		<import addon="script.module.kodi-six" />
+		<import addon="script.module.requests" optional="true"/>
+		<import addon="script.module.websocket" version="0.50.0"  optional="true"/>
+		<import addon="script.module.youtube.dl" optional="true"/>
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.dateutil" optional="true" />
+		<import addon="script.module.resolveurl" optional="true"/>
+		<import addon="script.module.urlresolver" optional="true"/>
+		<import addon="script.module.cloudscraper" optional="true"/>
+		<import addon="script.module.inputstreamhelper" optional="true"/>
+		<import addon="script.module.slproxy" optional="true"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+		<summary>Equilibrium Addon para Kodi 18 e 19+ Nexus</summary>
+		<description>
+Addon sem fins lucrativos
+O autor não é de forma alguma afiliado ao Kodi, Team Kodi ou a XBMC Foundation. Este é um recurso sem fins lucrativos
+Team Mgusplay
+Compativel com as versões 18 e 19+ Matrix	
+		</description>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshots/1.png</screenshot>
+       <screenshot>resources/screenshots/2.jpg</screenshot>
+       <screenshot>resources/screenshots/3.jpeg</screenshot>
+		</assets>
+	</extension>
+</addon>
+<addon id="repository.equilibrium.repo2" name="Repositorio Equilibrium" version="4.0.2" provider-name="Team Magusplay">
+    <extension point="xbmc.addon.repository" name="Nome Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/magusplay/equilibrium.repo2/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/magusplay/equilibrium.repo2/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/magusplay/equilibrium.repo2/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>REPO EQUILIBRIUM KODI ADDON</summary>
+        <description>REPOSITORIO OFICIAL Equilibrium TEAM MAGUSPLAY KODI ADDON</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
